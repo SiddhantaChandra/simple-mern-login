@@ -5,8 +5,8 @@ function App() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  async function registerUser() {
-    fetch('http://localhost:1337/api/resiter');
+  async function registerUser(events) {
+    events.preventDefault();
   }
 
   const inputStyle = `border placeholder-gray-400 focus:outline-none
@@ -50,7 +50,7 @@ function App() {
           value="Register"
           className="uppercase mx-auto shadow bg-indigo-800 hover:bg-indigo-700 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded mt-4"
         >
-          Regiter
+          Register
         </button>
       </form>
     </div>
